@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Nathanael Dehn",
+    "role": "Vorstand\nBildungsbeauftragter\nStrategie und Konzept",
+    "link": "https://www.natpositive.space",
+    "image": "/nd-illustration.png"
+  },
+  {
+    "name": "Vanessa van Anken",
+    "role": "Kollektionsentwicklung\n3D-Fashion Development\nBranding",
+    "link": "https://www.vananken.design",
+    "image": "/vva-illustration.png"
+  },
+  {
+    "name": "Andreas Bonke",
+    "role": "Web-Programmierung\nUX/ UI Design\nProjektmanagement",
+    "link": "https://www.andreasbonke.de",
+    "image": "/ab-illustration.png"
+  },
+  {
+    "name": "David Böhme",
+    "role": "Web Design\nSocial Media",
+    "link": "https://www.davidboeh.me",
+    "image": "/db-illustration.png"
+  },
+  {
+    "name": "Maria Lavrentieva",
+    "role": "Grafik Design\nWeb Design\nIllustration",
+    "link": "https://www.behance.net/marialavrent",
+    "image": "/ml-illustration.png"
+  }
+]

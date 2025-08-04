@@ -7,16 +7,16 @@
   --font-sans: var(--font-figtree);
   --font-mono: var(--font-figtree);
 
-  --color-brand-blue: #3C3CFF;
-  --color-brand-yellow: #FFB400;
-  --color-brand-orange: #FA4605;
-  --color-brand-gray: #3C3C3C;
-  --color-brand-beige: #F5F0EB;
+  --color-brand-blue: #3c3cff;
+  --color-brand-yellow: #ffb400;
+  --color-brand-orange: #fa4605;
+  --color-brand-gray: #3c3c3c;
+  --color-brand-beige: #f5f0eb;
 
-   --color-success: #10B981;
-   --color-warning: #F59E0B;
-   --color-error: #EF4444;
-   --color-info: #3B82F6;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
