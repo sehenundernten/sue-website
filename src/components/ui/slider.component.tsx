@@ -9,7 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useMembers } from "@/hooks/useMembers";
-import MemberSliderItem from "./member-slider-item.component";
+import MemberSliderItem from "./slider-item.component";
 
 export default function MemberSlider() {
   const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));

@@ -4,9 +4,12 @@ import { Button } from "../ui/button";
 
 export default function Offers() {
   return (
-    <section className="container mx-auto py-28 flex flex-col gap-16">
+    <section
+      id="angebot"
+      className="container mx-auto py-28 flex flex-col gap-16"
+    >
       <h2 className="text-4xl font-bold text-brand-blue">Unsere Angebote</h2>
-      <div className="flex flex-row gap-8">
+      <div className="flex flex-row gap-16">
         <div className="flex flex-col w-full gap-6">
           <h3 className="text-2xl font-bold">Für Studierende</h3>
           <div className="pl-10">
@@ -19,7 +22,7 @@ export default function Offers() {
           </div>
           <div className="flex flex-row justify-end">
             <Button variant="link">
-              <Link href="/">Mitglied werden</Link>
+              <Link href="/#mitglied-werden">Mitglied werden</Link>
             </Button>
           </div>
         </div>
@@ -34,7 +37,7 @@ export default function Offers() {
           </div>
           <div className="flex flex-row justify-end">
             <Button variant="link">
-              <Link href="/">Mitglied werden</Link>
+              <Link href="/#mitglied-werden">Mitglied werden</Link>
             </Button>
           </div>
         </div>
@@ -49,7 +52,7 @@ export default function Offers() {
           </div>
           <div className="flex flex-row justify-end">
             <Button variant="link">
-              <Link href="/">Kontakt aufnehmen</Link>
+              <Link href="/#kontakt">Kontakt aufnehmen</Link>
             </Button>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import { Member } from "@/types/member";
-import { CarouselItem } from "./ui/carousel";
-import { Button } from "./ui/button";
+import { CarouselItem } from "./carousel";
+import { Button } from "./button";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -22,7 +22,9 @@ export default function MemberSliderItem({ member }: { member: Member }) {
         <p className="text-lg break-words whitespace-pre-wrap">{member.role}</p>
         <div>
           <Button variant="link">
-            <Link href={member.link}>{member.link.split("/").pop()}</Link>
+            <Link href={member.link}>
+              {member.link.split("https://www.").pop()}
+            </Link>
           </Button>
         </div>
       </div>

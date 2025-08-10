@@ -1,20 +1,36 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { ScrollBanner } from "../ui/banner.component";
+import { bannerItems } from "@/data/banner-items";
+import React, { useRef } from "react";
 
 export default function Hero() {
+  const containerRef = useRef(null);
+
   return (
-    <div className="relative overflow-hidden pb-24">
-      <div className="absolute bottom-0 right-0 w-full h-full scale-60 translate-x-[40%] -z-10">
+    <div ref={containerRef} className="relative">
+      <div className="absolute bottom-0 right-0 w-full h-full scale-80 translate-x-[50%] -z-10">
         <Image
           className="object-cover"
           src="/hero-bg.png"
-          alt="Hero Background"
+          alt=""
           width={2000}
           height={2000}
         />
       </div>
-      <section className="container mx-auto py-28">
+      <div className="absolute bottom-0 left-0 w-full h-full scale-80 translate-y-[15%] translate-x-[50%] -z-10">
+        <Image
+          className="object-cover rounded-3xl"
+          src="/work_workshops.png"
+          alt="Workshop"
+          width={720}
+          height={480}
+        />
+      </div>
+      <section className="container mx-auto pt-48 pb-28">
         <div className="flex flex-col max-w-2xl gap-8">
           <div className="flex flex-col gap-8">
             <h1 className="text-6xl font-bold text-brand-blue">
@@ -28,12 +44,13 @@ export default function Hero() {
             </p>
           </div>
           <div className="flex flex-row gap-4">
-            <Button variant="outline">
-              <Link href="/">Kontakt</Link>
+            <Button variant="primary" size="primary">
+              <Link href="/#kontakt">Kontakt</Link>
             </Button>
           </div>
         </div>
       </section>
+      <ScrollBanner items={bannerItems} containerRef={containerRef} />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
+import Image from "next/image";
 
 import { cn } from "@/lib/utils";
 
@@ -19,12 +20,15 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-        link: "text-primary underline-offset-4 hover:underline",
+        link: "text-primary text-md font-bold underline-offset-4 decoration-brand-orange decoration-3 hover:underline",
+        primary:
+          "bg-white text-brand-gray text-md font-bold shadow-none hover:shadow-sm group",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
         sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+        primary: "h-14 rounded-full px-10 has-[>svg]:px-4",
         icon: "size-9",
       },
     },
@@ -40,6 +44,7 @@ function Button({
   variant,
   size,
   asChild = false,
+  children,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
@@ -52,7 +57,24 @@ function Button({
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
-    />
+    >
+      {variant === "primary" ? (
+        <>
+          <span className="transition-transform duration-300 group-hover:translate-x-1">
+            {children}
+          </span>
+          <Image
+            src="/arrow-icon.svg"
+            alt="Arrow"
+            width={60}
+            height={32}
+            className="transition-transform duration-300 group-hover:translate-x-1"
+          />
+        </>
+      ) : (
+        children
+      )}
+    </Comp>
   );
 }
 

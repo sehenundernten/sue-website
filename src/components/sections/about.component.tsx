@@ -1,9 +1,12 @@
 import Image from "next/image";
-import MemberSlider from "../member-slider.component";
+import MemberSlider from "../ui/slider.component";
 
 export default function About() {
   return (
-    <section className="container mx-auto py-28 flex flex-col gap-16">
+    <section
+      id="ueber-uns"
+      className="container mx-auto py-28 flex flex-col gap-16"
+    >
       <h2 className="text-4xl font-bold text-brand-blue">Über uns</h2>
       <div className="flex flex-row gap-8">
         <Image
