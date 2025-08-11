@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const figtree = localFont({
   src: [
@@ -30,6 +32,8 @@ export default function RootLayout({
         className={`${figtree.variable} antialiased bg-brand-beige text-brand-gray`}
       >
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
