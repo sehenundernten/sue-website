@@ -6,11 +6,14 @@ export default function Offers() {
   return (
     <section
       id="angebot"
+      aria-labelledby="angebot-title"
       className="container mx-auto py-28 flex flex-col gap-16"
     >
-      <h2 className="text-4xl font-bold text-brand-blue">Unsere Angebote</h2>
-      <div className="flex flex-row gap-16">
-        <div className="flex flex-col w-full gap-6">
+      <h2 id="angebot-title" className="text-4xl font-bold text-brand-blue">
+        Unsere Angebote
+      </h2>
+      <ul role="list" className="grid grid-cols-3 gap-16">
+        <li className="flex flex-col w-full gap-6">
           <h3 className="text-2xl font-bold">Für Studierende</h3>
           <div className="pl-10">
             <p className="text-lg">
@@ -21,12 +24,12 @@ export default function Offers() {
             </p>
           </div>
           <div className="flex flex-row justify-end">
-            <Button variant="link">
+            <Button variant="secondary" asChild>
               <Link href="/#mitglied-werden">Mitglied werden</Link>
             </Button>
           </div>
-        </div>
-        <div className="flex flex-col w-full gap-6">
+        </li>
+        <li className="flex flex-col w-full gap-6">
           <h3 className="text-2xl font-bold">Für Alumni und Selbstständige</h3>
           <div className="pl-10">
             <p className="text-lg">
@@ -36,12 +39,12 @@ export default function Offers() {
             </p>
           </div>
           <div className="flex flex-row justify-end">
-            <Button variant="link">
+            <Button variant="secondary" asChild>
               <Link href="/#mitglied-werden">Mitglied werden</Link>
             </Button>
           </div>
-        </div>
-        <div className="flex flex-col w-full gap-6">
+        </li>
+        <li className="flex flex-col w-full gap-6">
           <h3 className="text-2xl font-bold">Für Hochschulen & Partner</h3>
           <div className="pl-10">
             <p className="text-lg">
@@ -51,12 +54,12 @@ export default function Offers() {
             </p>
           </div>
           <div className="flex flex-row justify-end">
-            <Button variant="link">
+            <Button variant="secondary" asChild>
               <Link href="/#kontakt">Kontakt aufnehmen</Link>
             </Button>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
   );
 }

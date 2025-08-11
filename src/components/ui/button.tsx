@@ -16,16 +16,16 @@ const buttonVariants = cva(
           "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
         outline:
           "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+        primary:
+          "bg-white text-brand-gray text-md font-bold shadow-none hover:shadow-sm group",
         secondary:
-          "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
+          "bg-transparent text-brand-gray text-md font-bold shadow-none group",
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary text-md font-bold underline-offset-4 decoration-brand-orange decoration-3 hover:underline",
-        primary:
-          "bg-white text-brand-gray text-md font-bold shadow-none hover:shadow-sm group",
       },
       size: {
-        default: "h-9 px-4 py-2 has-[>svg]:px-3",
+        default: "h-12 px-4 py-2 has-[>svg]:px-3",
         sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
         primary: "h-14 rounded-full px-10 has-[>svg]:px-4",
@@ -58,19 +58,20 @@ function Button({
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
     >
-      {variant === "primary" ? (
-        <>
+      {variant === "primary" || variant === "secondary" ? (
+        <div className="flex flex-row items-center gap-2">
           <span className="transition-transform duration-300 group-hover:translate-x-1">
             {children}
           </span>
           <Image
             src="/arrow-icon.svg"
-            alt="Arrow"
+            alt=""
+            aria-hidden="true"
             width={60}
             height={32}
             className="transition-transform duration-300 group-hover:translate-x-1"
           />
-        </>
+        </div>
       ) : (
         children
       )}

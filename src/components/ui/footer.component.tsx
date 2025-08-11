@@ -9,7 +9,8 @@ export default function Footer() {
         <Image
           className="object-cover"
           src="/footer-bg.png"
-          alt="Footer Background"
+          alt=""
+          aria-hidden="true"
           width={2000}
           height={2000}
         />
@@ -61,14 +62,14 @@ export default function Footer() {
           </div>
           <div className="flex flex-row justify-center items-center gap-1 text-center">
             <p>&copy; 2025 Sehen und Ernten. Alle Rechte vorbehalten.</p>
-            <div className="flex flex-row">
-              <Button variant="link">
+            <div className="flex flex-row items-center">
+              <Button variant="link" asChild>
                 <Link className="font-bold text-white" href="/">
                   Impressum
                 </Link>
               </Button>
               <span className="text-lg">|</span>
-              <Button variant="link">
+              <Button variant="link" asChild>
                 <Link className="font-bold text-white" href="/">
                   Datenschutzbestimmungen
                 </Link>

@@ -14,6 +14,7 @@ export default function MemberSliderItem({ member }: { member: Member }) {
         className="object-cover"
         src={member.image}
         alt=""
+        aria-hidden="true"
         width={180}
         height={250}
       />
@@ -21,7 +22,7 @@ export default function MemberSliderItem({ member }: { member: Member }) {
         <h3 className="text-2xl font-bold">{member.name}</h3>
         <p className="text-lg break-words whitespace-pre-wrap">{member.role}</p>
         <div>
-          <Button variant="link">
+          <Button variant="link" asChild>
             <Link href={member.link}>
               {member.link.split("https://www.").pop()}
             </Link>

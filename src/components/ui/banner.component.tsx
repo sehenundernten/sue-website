@@ -50,10 +50,12 @@ export function ScrollBanner({ items, containerRef }: ScrollBannerProps) {
         {items.map((item, index) => (
           <div
             key={`second-${index}`}
-            className="flex flex-row w-full items-center whitespace-nowrap mx-8 space-x-8"
+            className="flex flex-row w-full items-center space-x-8"
             role="listitem"
           >
-            <span className="text-md font-bold uppercase">{item.text}</span>
+            <span className="whitespace-nowrap text-md font-bold uppercase">
+              {item.text}
+            </span>
             {item.icon}
           </div>
         ))}

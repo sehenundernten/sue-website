@@ -189,7 +189,13 @@ function CarouselPrevious({
       onClick={scrollPrev}
       {...props}
     >
-      <Image src="/arrow-left.svg" alt="Vorherige" width={24} height={24} />
+      <Image
+        src="/arrow-left.svg"
+        alt=""
+        aria-hidden="true"
+        width={24}
+        height={24}
+      />
       <span className="sr-only">Vorherige</span>
     </Button>
   );
@@ -213,7 +219,13 @@ function CarouselNext({
       onClick={scrollNext}
       {...props}
     >
-      <Image src="/arrow-right.svg" alt="Nächste" width={24} height={24} />
+      <Image
+        src="/arrow-right.svg"
+        alt=""
+        aria-hidden="true"
+        width={24}
+        height={24}
+      />
       <span className="sr-only">Nächste</span>
     </Button>
   );

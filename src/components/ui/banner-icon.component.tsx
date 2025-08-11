@@ -12,6 +12,7 @@ export function BannerIcon({ src, alt, width, height }: BannerIconProps) {
     <Image
       src={src}
       alt={alt}
+      aria-hidden="true"
       width={width}
       height={height}
       className="text-brand-yellow min-w-fit"

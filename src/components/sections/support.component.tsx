@@ -7,19 +7,24 @@ export default function Support() {
   return (
     <section
       id="mitglied-werden"
+      aria-labelledby="mitglied-werden-title"
       className="container mx-auto relative py-28 flex flex-col gap-16"
     >
       <div className="absolute top-0 left-0 w-full h-full -z-10">
         <Image
           className="object-cover"
           src="/support-bg.png"
-          alt="Support Background"
+          alt=""
+          aria-hidden="true"
           width={2000}
           height={2000}
         />
       </div>
       <div className="flex flex-col gap-4 max-w-2xl mx-auto text-center justify-center">
-        <h2 className="text-5xl font-bold text-brand-blue">
+        <h2
+          id="mitglied-werden-title"
+          className="text-5xl font-bold text-brand-blue"
+        >
           Werde jetzt Mitglied
         </h2>
         <p>
@@ -34,7 +39,8 @@ export default function Support() {
               <div className="flex flex-col justify-center items-center w-12 h-12">
                 <Image
                   src="/student-icon.svg"
-                  alt="Student Icon"
+                  alt=""
+                  aria-hidden="true"
                   width={42}
                   height={42}
                 />
@@ -46,14 +52,14 @@ export default function Support() {
             <div className="flex flex-col gap-2">
               <div className="flex flex-row items-baseline gap-2">
                 <span className="text-6xl font-bold text-brand-blue">20€</span>
-                <span className="text-lg font-bold text-brand-blue/60">
+                <span className="text-lg font-bold text-brand-blue/70">
                   /Monat
                 </span>
               </div>
               <p>Nutze unsere Workshops und Netzwerkangebote.</p>
             </div>
             <div className="flex w-full flex-row gap-2 justify-end">
-              <Button variant="link">
+              <Button variant="secondary" asChild>
                 <Link href="/#kontakt">Kontakt aufnehmen</Link>
               </Button>
             </div>
@@ -65,7 +71,8 @@ export default function Support() {
               <div className="flex flex-col justify-center items-center w-12 h-12">
                 <Image
                   src="/coworking-icon.svg"
-                  alt="Coworking Icon"
+                  alt=""
+                  aria-hidden="true"
                   width={48}
                   height={48}
                 />
@@ -76,9 +83,9 @@ export default function Support() {
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex flex-row items-baseline gap-2">
-                <span className="text-lg font-bold text-brand-blue/60">ab</span>
+                <span className="text-lg font-bold text-brand-blue/70">ab</span>
                 <span className="text-6xl font-bold text-brand-blue">100€</span>
-                <span className="text-lg font-bold text-brand-blue/60">
+                <span className="text-lg font-bold text-brand-blue/70">
                   /Monat
                 </span>
               </div>
@@ -88,7 +95,7 @@ export default function Support() {
               </p>
             </div>
             <div className="flex w-full flex-row gap-2 justify-end">
-              <Button variant="link">
+              <Button variant="secondary" asChild>
                 <Link href="/#kontakt">Kontakt aufnehmen</Link>
               </Button>
             </div>
@@ -100,7 +107,8 @@ export default function Support() {
               <div className="flex flex-col justify-center items-center w-12 h-12">
                 <Image
                   src="/supporter-icon.svg"
-                  alt="Supporter Icon"
+                  alt=""
+                  aria-hidden="true"
                   width={42}
                   height={42}
                 />
@@ -111,9 +119,9 @@ export default function Support() {
             </div>
             <div className="flex flex-col gap-2">
               <div className="flex flex-row items-baseline gap-2">
-                <span className="text-lg font-bold text-brand-blue/60">ab</span>
+                <span className="text-lg font-bold text-brand-blue/70">ab</span>
                 <span className="text-6xl font-bold text-brand-blue">1€</span>
-                <span className="text-lg font-bold text-brand-blue/60">
+                <span className="text-lg font-bold text-brand-blue/70">
                   /Monat
                 </span>
               </div>
@@ -123,7 +131,7 @@ export default function Support() {
               </p>
             </div>
             <div className="flex w-full flex-row gap-2 justify-end">
-              <Button variant="link">
+              <Button variant="secondary" asChild>
                 <Link href="https://paypal.me/sehenundernten">PayPal</Link>
               </Button>
             </div>

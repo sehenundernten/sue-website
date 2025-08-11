@@ -15,17 +15,18 @@ export default function Hero() {
       <div className="absolute bottom-0 right-0 w-full h-full scale-80 translate-x-[50%] -z-10">
         <Image
           className="object-cover"
+          aria-hidden="true"
           src="/hero-bg.png"
           alt=""
           width={2000}
           height={2000}
         />
       </div>
-      <div className="absolute bottom-0 left-0 w-full h-full scale-80 translate-y-[15%] translate-x-[50%] -z-10">
+      <div className="absolute bottom-0 left-0 w-full h-full scale-90 translate-y-[20%] translate-x-[60%] -z-10">
         <Image
           className="object-cover rounded-3xl"
           src="/work_workshops.png"
-          alt="Workshop"
+          alt="Workshop Aufnahme mit Teilnehmern im sehen und ernten Büro"
           width={720}
           height={480}
         />
@@ -44,7 +45,7 @@ export default function Hero() {
             </p>
           </div>
           <div className="flex flex-row gap-4">
-            <Button variant="primary" size="primary">
+            <Button variant="primary" size="primary" asChild>
               <Link href="/#kontakt">Kontakt</Link>
             </Button>
           </div>
