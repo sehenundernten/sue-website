@@ -15,7 +15,11 @@ export default function Footer() {
           height={2000}
         />
       </div>
-      <footer id="kontakt" className="container mx-auto pt-80 pb-28">
+      <footer
+        id="kontakt"
+        role="contentinfo"
+        className="container mx-auto pt-80 pb-28"
+      >
         <div className="flex flex-col justify-center items-center text-center gap-8 text-white">
           <div className="flex flex-col items-center">
             <div className="py-4">

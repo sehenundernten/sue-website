@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <main className="overflow-hidden">
+      <main role="main" className="overflow-hidden">
         <Hero />
         <Offers />
         <Work />

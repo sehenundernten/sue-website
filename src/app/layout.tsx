@@ -19,6 +19,20 @@ const figtree = localFont({
 export const metadata: Metadata = {
   title: "Sehen und Ernten - Werkstatt für Konzeption und Gestaltung",
   description: "Das Kreativnetzwerk für Studierende, Alumni und Selbständige.",
+  manifest: "/manifest.json",
+  openGraph: {
+    title: "Sehen und Ernten - Werkstatt für Konzeption und Gestaltung",
+    description:
+      "Das Kreativnetzwerk für Studierende, Alumni und Selbständige.",
+    type: "website",
+    locale: "de_DE",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sehen und Ernten - Werkstatt für Konzeption und Gestaltung",
+    description:
+      "Das Kreativnetzwerk für Studierende, Alumni und Selbständige.",
+  },
 };
 
 export default function RootLayout({
