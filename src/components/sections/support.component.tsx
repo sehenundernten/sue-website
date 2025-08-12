@@ -27,7 +27,7 @@ export default function Support() {
         >
           Werde jetzt Mitglied
         </h2>
-        <p>
+        <p className="text-lg">
           Möchtest du Teil unseres Netzwerks werden? Wir bieten verschiedene
           Mitgliedsmodelle an:
         </p>
@@ -56,7 +56,9 @@ export default function Support() {
                   /Monat
                 </span>
               </div>
-              <p>Nutze unsere Workshops und Netzwerkangebote.</p>
+              <p className="text-lg">
+                Nutze unsere Workshops und Netzwerkangebote.
+              </p>
             </div>
             <div className="flex w-full flex-row gap-2 justify-end">
               <Button variant="secondary" asChild>
@@ -89,7 +91,7 @@ export default function Support() {
                   /Monat
                 </span>
               </div>
-              <p>
+              <p className="text-lg">
                 Erhalte einen festen Arbeitsplatz und werde Teil unserer
                 kreativen Arbeitsgemeinschaft.
               </p>
@@ -125,7 +127,7 @@ export default function Support() {
                   /Monat
                 </span>
               </div>
-              <p>
+              <p className="text-lg">
                 Fördere unsere Arbeit mit einem Beitrag und trage dazu bei,
                 unser Angebot aufrechtzuerhalten.
               </p>

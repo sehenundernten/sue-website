@@ -15,7 +15,11 @@ export default function Footer() {
           height={2000}
         />
       </div>
-      <footer id="kontakt" className="container mx-auto pt-80 pb-28">
+      <footer
+        id="kontakt"
+        role="contentinfo"
+        className="container mx-auto pt-80 pb-28"
+      >
         <div className="flex flex-col justify-center items-center text-center gap-8 text-white">
           <div className="flex flex-col items-center">
             <div className="py-4">
@@ -64,14 +68,14 @@ export default function Footer() {
             <p>&copy; 2025 Sehen und Ernten. Alle Rechte vorbehalten.</p>
             <div className="flex flex-row items-center">
               <Button variant="link" asChild>
-                <Link className="font-bold text-white" href="/">
+                <Link className="font-bold text-white" href="/impressum">
                   Impressum
                 </Link>
               </Button>
               <span className="text-lg">|</span>
               <Button variant="link" asChild>
-                <Link className="font-bold text-white" href="/">
-                  Datenschutzbestimmungen
+                <Link className="font-bold text-white" href="/datenschutz">
+                  Datenschutz
                 </Link>
               </Button>
             </div>

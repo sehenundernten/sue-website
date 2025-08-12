@@ -19,7 +19,7 @@ export default function About() {
           width={120}
           height={235}
         />
-        <div className="flex flex-col gap-4 max-w-2xl">
+        <div className="flex flex-col gap-4 max-w-2xl text-lg">
           <p>
             Wir sind ein gemeinnütziger Verein, der Designstudierenden die
             Möglichkeit gibt, über das Studium hinaus Praxiserfahrung zu

@@ -43,7 +43,7 @@ export default function Work() {
               </p>
               <div className="flex justify-end py-4">
                 <Button variant="secondary" asChild>
-                  <Link href="/">Zum Projekt</Link>
+                  <Link href="/projekte/htw-ki-werkstatt">Zum Projekt</Link>
                 </Button>
               </div>
             </CardContent>
@@ -64,7 +64,7 @@ export default function Work() {
               </p>
               <div className="flex justify-end py-4">
                 <Button variant="secondary" asChild>
-                  <Link href="/">Mehr erfahren</Link>
+                  <Link href="/workshops">Mehr erfahren</Link>
                 </Button>
               </div>
             </CardContent>
@@ -83,7 +83,7 @@ export default function Work() {
               <p className="text-brand-gray/70">#Kreativnetzwerk #NewWork</p>
               <div className="flex justify-end py-4">
                 <Button variant="secondary" asChild>
-                  <Link href="/">Mehr erfahren</Link>
+                  <Link href="/co-working">Mehr erfahren</Link>
                 </Button>
               </div>
             </CardContent>
