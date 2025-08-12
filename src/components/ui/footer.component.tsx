@@ -68,14 +68,14 @@ export default function Footer() {
             <p>&copy; 2025 Sehen und Ernten. Alle Rechte vorbehalten.</p>
             <div className="flex flex-row items-center">
               <Button variant="link" asChild>
-                <Link className="font-bold text-white" href="/">
+                <Link className="font-bold text-white" href="/impressum">
                   Impressum
                 </Link>
               </Button>
               <span className="text-lg">|</span>
               <Button variant="link" asChild>
-                <Link className="font-bold text-white" href="/">
-                  Datenschutzbestimmungen
+                <Link className="font-bold text-white" href="/datenschutz">
+                  Datenschutz
                 </Link>
               </Button>
             </div>
