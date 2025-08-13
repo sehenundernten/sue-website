@@ -3,9 +3,11 @@ import Link from "next/link";
 export default function Impressum() {
   return (
     <main id="main-content" role="main" className="overflow-hidden">
-      <section className="container max-w-4xl mx-auto pt-48 pb-28">
+      <section className="container max-w-4xl mx-auto px-8 xl:px-0 pt-48 pb-28">
         <div className="flex flex-col gap-8">
-          <h1 className="text-6xl font-bold text-brand-blue">Impressum</h1>
+          <h1 className="text-4xl xl:text-6xl font-bold text-brand-blue">
+            Impressum
+          </h1>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-4">
               <p>
@@ -25,7 +27,9 @@ export default function Impressum() {
               </p>
             </div>
             <div className="flex flex-col gap-4">
-              <h2 className="text-2xl font-bold text-brand-blue">Kontakt</h2>
+              <h2 className="text-xl xl:text-2xl font-bold text-brand-blue">
+                Kontakt
+              </h2>
               <p>
                 E-Mail:{" "}
                 <Link href="mailto:mail@sehenundernten.org">
@@ -34,7 +38,7 @@ export default function Impressum() {
               </p>
             </div>
             <div className="flex flex-col gap-4">
-              <h2 className="text-2xl font-bold text-brand-blue">
+              <h2 className="text-xl xl:text-2xl font-bold text-brand-blue">
                 Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle
               </h2>
               <p>

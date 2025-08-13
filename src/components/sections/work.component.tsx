@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Work() {
   return (
     <div className="relative">
-      <div className="absolute top-0 right-0 w-full h-full translate-x-[60vw] -z-10">
+      <div className="absolute top-0 right-0 w-full h-full translate-x-[60vw] -z-10 hidden lg:block">
         <Image
           src="/star-icon.svg"
           alt=""
@@ -18,16 +18,16 @@ export default function Work() {
       <section
         id="was-wir-machen"
         aria-labelledby="was-wir-machen-title"
-        className="container mx-auto py-28 flex flex-col gap-16"
+        className="container mx-auto px-8 xl:px-0 py-28 flex flex-col gap-16"
       >
         <h2
           id="was-wir-machen-title"
-          className="text-4xl font-bold text-brand-blue"
+          className="text-2xl xl:text-4xl font-bold text-brand-blue"
         >
           Was wir machen
         </h2>
-        <div className="flex flex-row gap-16 justify-between">
-          <Card className="w-full p-0 overflow-hidden">
+        <div className="flex flex-col lg:flex-row gap-12 xl:gap-16 items-center justify-between">
+          <Card className="w-full sm:w-2/3 lg:w-full p-0 overflow-hidden">
             <CardHeader className="p-0">
               <Image
                 src="/work_design-projects.png"
@@ -37,7 +37,7 @@ export default function Work() {
               />
             </CardHeader>
             <CardContent className="flex flex-col gap-4 justify-between">
-              <h3 className="text-2xl font-bold">Design</h3>
+              <h3 className="text-xl xl:text-2xl font-bold">Design</h3>
               <p className="text-brand-gray/70">
                 #CD #Konzeption #Webdesign #Programmierung
               </p>
@@ -48,7 +48,7 @@ export default function Work() {
               </div>
             </CardContent>
           </Card>
-          <Card className="w-full p-0 overflow-hidden">
+          <Card className="w-full sm:w-2/3 lg:w-full p-0 overflow-hidden">
             <CardHeader className="p-0">
               <Image
                 src="/work_workshops.png"
@@ -58,7 +58,7 @@ export default function Work() {
               />
             </CardHeader>
             <CardContent className="flex flex-col gap-4 justify-between">
-              <h3 className="text-2xl font-bold">Workshops</h3>
+              <h3 className="text-xl xl:text-2xl font-bold">Workshops</h3>
               <p className="text-brand-gray/70">
                 #Weiterbildung #Theorie #Praxis
               </p>
@@ -69,7 +69,7 @@ export default function Work() {
               </div>
             </CardContent>
           </Card>
-          <Card className="w-full p-0 overflow-hidden">
+          <Card className="w-full sm:w-2/3 lg:w-full p-0 overflow-hidden">
             <CardHeader className="p-0">
               <Image
                 src="/work_co-working.png"
@@ -79,7 +79,7 @@ export default function Work() {
               />
             </CardHeader>
             <CardContent className="flex flex-col gap-4 justify-between">
-              <h3 className="text-2xl font-bold">Co-Working</h3>
+              <h3 className="text-xl xl:text-2xl font-bold">Co-Working</h3>
               <p className="text-brand-gray/70">#Kreativnetzwerk #NewWork</p>
               <div className="flex justify-end py-4">
                 <Button variant="secondary" asChild>

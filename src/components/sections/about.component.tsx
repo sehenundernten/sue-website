@@ -6,16 +6,20 @@ export default function About() {
     <section
       id="ueber-uns"
       aria-labelledby="ueber-uns-title"
-      className="container mx-auto py-28 flex flex-col gap-16"
+      className="container mx-auto px-8 xl:px-0 py-28 flex flex-col gap-16"
     >
-      <h2 id="ueber-uns-title" className="text-4xl font-bold text-brand-blue">
+      <h2
+        id="ueber-uns-title"
+        className="text-2xl xl:text-4xl font-bold text-brand-blue"
+      >
         Über uns
       </h2>
-      <div className="flex flex-row gap-8">
+      <div className="flex flex-col xl:flex-row gap-8">
         <Image
           src="/about-icon.svg"
           alt=""
           aria-hidden="true"
+          className="hidden lg:block lg:w-[120px]"
           width={120}
           height={235}
         />

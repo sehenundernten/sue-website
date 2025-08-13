@@ -8,9 +8,9 @@ export default function Support() {
     <section
       id="mitglied-werden"
       aria-labelledby="mitglied-werden-title"
-      className="container mx-auto relative py-28 flex flex-col gap-16"
+      className="container relative mx-auto px-8 xl:px-0 py-28 flex flex-col gap-16"
     >
-      <div className="absolute top-0 left-0 w-full h-full -z-10">
+      <div className="absolute top-0 left-0 w-full h-full -z-10 hidden lg:block">
         <Image
           className="object-cover"
           src="/support-bg.png"
@@ -23,7 +23,7 @@ export default function Support() {
       <div className="flex flex-col gap-4 max-w-2xl mx-auto text-center justify-center">
         <h2
           id="mitglied-werden-title"
-          className="text-5xl font-bold text-brand-blue"
+          className="text-3xl xl:text-5xl font-bold text-brand-blue"
         >
           Werde jetzt Mitglied
         </h2>
@@ -32,8 +32,8 @@ export default function Support() {
           Mitgliedsmodelle an:
         </p>
       </div>
-      <div className="flex flex-row max-w-6xl mx-auto gap-24">
-        <Card className="w-full">
+      <div className="flex flex-col lg:flex-row items-center lg:items-stretch max-w-6xl mx-auto gap-12 xl:gap-24">
+        <Card className="w-full sm:w-2/3 lg:w-full">
           <CardContent className="flex flex-col justify-between h-full gap-6">
             <div className="flex flex-col gap-4">
               <div className="flex flex-col justify-center items-center w-12 h-12">
@@ -45,7 +45,7 @@ export default function Support() {
                   height={42}
                 />
               </div>
-              <h3 className="text-2xl font-bold uppercase text-brand-blue">
+              <h3 className="text-xl xl:text-2xl font-bold uppercase text-brand-blue">
                 Studierende
               </h3>
             </div>
@@ -67,7 +67,7 @@ export default function Support() {
             </div>
           </CardContent>
         </Card>
-        <Card className="w-full">
+        <Card className="w-full sm:w-2/3 lg:w-full">
           <CardContent className="flex flex-col justify-between h-full gap-6">
             <div className="flex flex-col gap-4">
               <div className="flex flex-col justify-center items-center w-12 h-12">
@@ -79,7 +79,7 @@ export default function Support() {
                   height={48}
                 />
               </div>
-              <h3 className="text-2xl font-bold uppercase text-brand-blue">
+              <h3 className="text-xl xl:text-2xl font-bold uppercase text-brand-blue">
                 Büro-Mitgliedschaft
               </h3>
             </div>
@@ -103,7 +103,7 @@ export default function Support() {
             </div>
           </CardContent>
         </Card>
-        <Card className="w-full">
+        <Card className="w-full sm:w-2/3 lg:w-full">
           <CardContent className="flex flex-col justify-between h-full gap-6">
             <div className="flex flex-col gap-4">
               <div className="flex flex-col justify-center items-center w-12 h-12">
@@ -115,7 +115,7 @@ export default function Support() {
                   height={42}
                 />
               </div>
-              <h3 className="text-2xl font-bold uppercase text-brand-blue">
+              <h3 className="text-xl xl:text-2xl font-bold uppercase text-brand-blue">
                 Unterstützende
               </h3>
             </div>
