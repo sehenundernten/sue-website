@@ -12,7 +12,7 @@ export default function Hero() {
 
   return (
     <div ref={containerRef} className="relative">
-      <div className="absolute bottom-0 right-0 w-full h-full scale-80 translate-x-[50%] -z-10">
+      <div className="absolute hidden md:block bottom-0 right-0 w-full h-full xl:scale-80 translate-x-[50%] translate-y-[50%] xl:translate-y-[2%] -z-10">
         <Image
           className="object-cover"
           aria-hidden="true"
@@ -22,7 +22,7 @@ export default function Hero() {
           height={2000}
         />
       </div>
-      <div className="absolute bottom-0 left-0 w-full h-full scale-90 translate-y-[20%] translate-x-[60%] -z-10">
+      <div className="absolute bottom-0 right-0 w-full h-full hidden xl:block scale-90 translate-y-[20%] translate-x-[60%] -z-10">
         <Image
           className="object-cover rounded-3xl"
           src="/work_workshops.png"
@@ -31,11 +31,11 @@ export default function Hero() {
           height={480}
         />
       </div>
-      <section className="container mx-auto pt-48 pb-28">
+      <section className="container mx-auto px-8 xl:px-0 pt-48 pb-28">
         <div className="flex flex-col max-w-2xl gap-8">
           <div className="flex flex-col gap-8">
-            <h1 className="text-6xl font-bold text-brand-blue">
-              Das Kreativnetzwerk für Studierende, Alumni und Selbständige.
+            <h1 className="text-4xl xl:text-6xl font-bold text-brand-blue">
+              Das Kreativnetzwerk für Studierende, Alumni und Selbstständige.
             </h1>
             <p className="text-lg">
               Wir bieten dir Raum, Inspiration und Unterstützung, um kreative

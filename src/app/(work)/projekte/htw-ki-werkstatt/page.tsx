@@ -5,11 +5,11 @@ import Image from "next/image";
 export default function HTWKIWerkstatt() {
   return (
     <main id="main-content" role="main" className="overflow-hidden">
-      <section className="container mx-auto pt-48 pb-28">
-        <h1 className="text-4xl font-bold text-brand-blue">
+      <section className="container mx-auto px-8 xl:px-0 pt-48 pb-16 xl:pb-28">
+        <h1 className="text-3xl xl:text-4xl font-bold text-brand-blue">
           KI-Werkstatt der HTW Berlin
         </h1>
-        <div className="grid grid-cols-2 gap-16 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 py-16">
           <div className="flex flex-col gap-4 text-lg">
             <p>
               Design-Studierende der HTW beweisen: Wir können geiles Design!
@@ -53,7 +53,7 @@ export default function HTWKIWerkstatt() {
           />
         </div>
       </section>
-      <section className="container mx-auto py-28">
+      <section className="container mx-auto px-8 xl:px-0 py-16 xl:py-28">
         <div className="flex flex-col max-w-3xl gap-4 text-lg">
           <p>
             Die Herausforderung lag darin nicht in das KI-Design-Klischee zu
@@ -78,7 +78,7 @@ export default function HTWKIWerkstatt() {
           />
         </div>
       </section>
-      <section className="container mx-auto py-28">
+      <section className="container mx-auto px-8 xl:px-0 py-16 xl:py-28">
         <div className="flex flex-col max-w-3xl gap-4 text-lg">
           <p>
             Die Umsetzung der Website war eine wertvolle Lernerfahrung für uns
@@ -97,13 +97,13 @@ export default function HTWKIWerkstatt() {
           <Image
             src="/projekt_ki-werkstatt-03.png"
             alt="KI-Werkstatt der HTW Berlin"
-            className="rounded-2xl"
+            className="rounded-2xl h-full"
             width={1680}
             height={700}
           />
         </div>
       </section>
-      <section className="container mx-auto py-28">
+      <section className="container mx-auto px-8 xl:px-0 py-28">
         <div className="flex flex-col gap-4">
           <Button variant="secondary" asChild>
             <Link

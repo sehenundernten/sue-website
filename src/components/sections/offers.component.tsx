@@ -7,15 +7,21 @@ export default function Offers() {
     <section
       id="angebot"
       aria-labelledby="angebot-title"
-      className="container mx-auto py-28 flex flex-col gap-16"
+      className="container mx-auto px-8 xl:px-0 py-28 flex flex-col gap-16"
     >
-      <h2 id="angebot-title" className="text-4xl font-bold text-brand-blue">
+      <h2
+        id="angebot-title"
+        className="text-2xl xl:text-4xl font-bold text-brand-blue"
+      >
         Unsere Angebote
       </h2>
-      <ul role="list" className="grid grid-cols-3 gap-16">
+      <ul
+        role="list"
+        className="grid grid-cols-1 lg:grid-cols-3 gap-24 lg:gap-16"
+      >
         <li className="flex flex-col w-full gap-6">
-          <h3 className="text-2xl font-bold">Für Studierende</h3>
-          <div className="pl-10">
+          <h3 className="text-xl xl:text-2xl font-bold">Für Studierende</h3>
+          <div className="pl-4 xl:pl-10">
             <p className="text-lg">
               Ergänze dein Studium mit praktischer Erfahrung! Nimm an Workshops
               teil, arbeite an Projekten mit und erweitere dein Netzwerk. Nutze
@@ -30,8 +36,10 @@ export default function Offers() {
           </div>
         </li>
         <li className="flex flex-col w-full gap-6">
-          <h3 className="text-2xl font-bold">Für Alumni und Selbstständige</h3>
-          <div className="pl-10">
+          <h3 className="text-xl xl:text-2xl font-bold">
+            Für Alumni und Selbstständige
+          </h3>
+          <div className="pl-4 xl:pl-10">
             <p className="text-lg">
               Bleib auch nach dem Studium kreativ verbunden! Nutze unser Büro
               als Arbeitsplatz, finde Kooperationspartner oder engagiere dich
@@ -45,8 +53,10 @@ export default function Offers() {
           </div>
         </li>
         <li className="flex flex-col w-full gap-6">
-          <h3 className="text-2xl font-bold">Für Hochschulen & Partner</h3>
-          <div className="pl-10">
+          <h3 className="text-xl xl:text-2xl font-bold">
+            Für Hochschulen & Partner
+          </h3>
+          <div className="pl-4 xl:pl-10">
             <p className="text-lg">
               Wir stehen für den Austausch zwischen Lehre und Praxis. Gerne
               kooperieren wir mit Hochschulen und Unternehmen, um kreative

@@ -36,29 +36,30 @@ export function ScrollBanner({ items, containerRef }: ScrollBannerProps) {
         {items.map((item, index) => (
           <div
             key={`first-${index}`}
-            className="flex flex-row w-full items-center space-x-8"
+            className="flex flex-row items-center space-x-8"
             role="listitem"
           >
-            <span className="whitespace-nowrap text-md font-bold uppercase">
+            <span className="whitespace-pre text-md font-bold uppercase">
               {item.text}
             </span>
             {item.icon}
           </div>
         ))}
-
-        {/* Zweite Gruppe - für nahtlosen Übergang */}
-        {items.map((item, index) => (
-          <div
-            key={`second-${index}`}
-            className="flex flex-row w-full items-center space-x-8"
-            role="listitem"
-          >
-            <span className="whitespace-nowrap text-md font-bold uppercase">
-              {item.text}
-            </span>
-            {item.icon}
-          </div>
-        ))}
+        <div className="hidden xl:flex">
+          {/* Zweite Gruppe - für nahtlosen Übergang */}
+          {items.map((item, index) => (
+            <div
+              key={`second-${index}`}
+              className="flex flex-row items-center space-x-8"
+              role="listitem"
+            >
+              <span className="whitespace-pre text-md font-bold uppercase">
+                {item.text}
+              </span>
+              {item.icon}
+            </div>
+          ))}
+        </div>
       </div>
     </motion.div>
   );

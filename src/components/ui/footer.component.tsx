@@ -5,11 +5,11 @@ import { Button } from "./button";
 export default function Footer() {
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 bottom-0 w-[100vw] h-[100vh] scale-150 translate-y-[30%] -z-10">
+      <div className="absolute left-0 right-0 bottom-0 w-full h-full -z-10">
         <Image
-          className="object-cover"
           src="/footer-bg.png"
           alt=""
+          className="w-full object-cover lg:object-fill h-full"
           aria-hidden="true"
           width={2000}
           height={2000}
@@ -18,7 +18,7 @@ export default function Footer() {
       <footer
         id="kontakt"
         role="contentinfo"
-        className="container mx-auto pt-80 pb-28"
+        className="container mx-auto px-4 xl:px-0 pt-80 pb-28"
       >
         <div className="flex flex-col justify-center items-center text-center gap-8 text-white">
           <div className="flex flex-col items-center">
@@ -64,7 +64,7 @@ export default function Footer() {
               <span className="sr-only">LinkedIn Profil</span>
             </Link>
           </div>
-          <div className="flex flex-row justify-center items-center gap-1 text-center">
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-1 text-center">
             <p>&copy; 2025 Sehen und Ernten. Alle Rechte vorbehalten.</p>
             <div className="flex flex-row items-center">
               <Button variant="link" asChild>

@@ -12,7 +12,7 @@ import { useMembers } from "@/hooks/useMembers";
 import MemberSliderItem from "./slider-item.component";
 
 export default function MemberSlider() {
-  const plugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: true }));
+  const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
   const { members } = useMembers();
 
   return (
@@ -21,10 +21,9 @@ export default function MemberSlider() {
       opts={{
         loop: true,
         align: "center",
-        duration: 50,
+        duration: 100,
       }}
       plugins={[plugin.current]}
-      className="w-full flex flex-col gap-16"
       onMouseEnter={() => plugin.current.stop()}
       onMouseLeave={() => plugin.current.play()}
     >
@@ -38,7 +37,7 @@ export default function MemberSlider() {
           </Suspense>
         ))}
       </CarouselContent>
-      <div className="flex justify-center gap-4">
+      <div className="flex justify-center gap-4 pt-16">
         <CarouselPrevious />
         <CarouselNext />
       </div>
