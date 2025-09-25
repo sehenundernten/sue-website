@@ -8,6 +8,8 @@ export default function Footer() {
       <div className="absolute inset-0 -z-10">
         <Image
           src="/footer-bg.png"
+          priority
+          loading="eager"
           alt=""
           className="w-full h-full object-cover object-top"
           aria-hidden="true"
