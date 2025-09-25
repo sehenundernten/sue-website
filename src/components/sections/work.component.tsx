@@ -62,7 +62,7 @@ export default function Work() {
               <p className="text-brand-gray/70">
                 #Weiterbildung #Theorie #Praxis
               </p>
-              <div className="flex justify-end py-4">
+              <div className="flex justify-end py-4 invisible">
                 <Button variant="secondary" asChild showArrow>
                   <Link href="/workshops">Mehr erfahren</Link>
                 </Button>
@@ -81,7 +81,7 @@ export default function Work() {
             <CardContent className="flex flex-col gap-4 justify-between">
               <h3 className="text-xl xl:text-2xl font-bold">Co-Working</h3>
               <p className="text-brand-gray/70">#Kreativnetzwerk #NewWork</p>
-              <div className="flex justify-end py-4">
+              <div className="flex justify-end py-4 invisible">
                 <Button variant="secondary" asChild showArrow>
                   <Link href="/co-working">Mehr erfahren</Link>
                 </Button>
