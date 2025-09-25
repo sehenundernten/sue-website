@@ -16,7 +16,7 @@ export default function Hero() {
         <Image
           className="object-cover"
           aria-hidden="true"
-          src="/hero-bg.png"
+          src="/hero-bg.webp"
           alt=""
           width={2000}
           height={2000}
@@ -25,7 +25,7 @@ export default function Hero() {
       <div className="absolute bottom-0 right-0 w-full h-full hidden xl:block scale-90 translate-y-[20%] translate-x-[60%] -z-10">
         <Image
           className="object-cover rounded-3xl"
-          src="/work_workshops.png"
+          src="/work_workshops.webp"
           alt="Workshop Aufnahme mit Teilnehmern im sehen und ernten Büro"
           width={720}
           height={480}

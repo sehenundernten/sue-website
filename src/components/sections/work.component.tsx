@@ -30,7 +30,7 @@ export default function Work() {
           <Card className="w-full sm:w-2/3 lg:w-full p-0 overflow-hidden">
             <CardHeader className="p-0">
               <Image
-                src="/work_design-projects.png"
+                src="/work_design-projects.webp"
                 alt="Sehen und Ernten Design Projekt mit der KI-Werkstatt der HTW-Berlin"
                 width={544}
                 height={363}
@@ -51,7 +51,7 @@ export default function Work() {
           <Card className="w-full sm:w-2/3 lg:w-full p-0 overflow-hidden">
             <CardHeader className="p-0">
               <Image
-                src="/work_workshops.png"
+                src="/work_workshops.webp"
                 alt="Sehen und Ernten Workshops"
                 width={544}
                 height={363}
@@ -72,7 +72,7 @@ export default function Work() {
           <Card className="w-full sm:w-2/3 lg:w-full p-0 overflow-hidden">
             <CardHeader className="p-0">
               <Image
-                src="/work_co-working.png"
+                src="/work_co-working.webp"
                 alt="Sehen und Ernten Co-Working"
                 width={544}
                 height={363}
