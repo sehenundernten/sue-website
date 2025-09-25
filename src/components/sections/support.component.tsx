@@ -8,7 +8,7 @@ export default function Support() {
     <section
       id="mitglied-werden"
       aria-labelledby="mitglied-werden-title"
-      className="container relative mx-auto px-8 xl:px-0 py-28 flex flex-col gap-16"
+      className="container relative mx-auto px-8 xl:px-0 pt-48 pb-28 flex flex-col gap-16"
     >
       <div className="absolute top-0 left-0 w-full h-full -z-10 hidden lg:block">
         <Image
@@ -61,8 +61,8 @@ export default function Support() {
               </p>
             </div>
             <div className="flex w-full flex-row gap-2 justify-end">
-              <Button variant="secondary" asChild>
-                <Link href="/#kontakt">Kontakt aufnehmen</Link>
+              <Button variant="secondary" asChild showArrow>
+                <Link href="/kontakt">Kontakt aufnehmen</Link>
               </Button>
             </div>
           </CardContent>
@@ -97,8 +97,8 @@ export default function Support() {
               </p>
             </div>
             <div className="flex w-full flex-row gap-2 justify-end">
-              <Button variant="secondary" asChild>
-                <Link href="/#kontakt">Kontakt aufnehmen</Link>
+              <Button variant="secondary" asChild showArrow>
+                <Link href="/kontakt">Kontakt aufnehmen</Link>
               </Button>
             </div>
           </CardContent>
@@ -132,9 +132,30 @@ export default function Support() {
                 unser Angebot aufrechtzuerhalten.
               </p>
             </div>
-            <div className="flex w-full flex-row gap-2 justify-end">
-              <Button variant="secondary" asChild>
-                <Link href="https://paypal.me/sehenundernten">PayPal</Link>
+            <div className="flex w-full flex-col gap-1 items-end">
+              <div className="text-center mr-1">
+                <span className="text-xs">paypal.me/sehenundernten</span>
+              </div>
+              <Button
+                variant="paypal"
+                asChild
+                className="bg-brand-blue text-white px-12"
+              >
+                <Link
+                  href="https://paypal.me/sehenundernten"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/paypal-icon.svg"
+                    alt="PayPal Logo"
+                    aria-hidden="true"
+                    width={100}
+                    height={100}
+                    className="w-fit h-fit"
+                  />
+                  <span className="sr-only">Spenden über PayPal Me</span>
+                </Link>
               </Button>
             </div>
           </CardContent>

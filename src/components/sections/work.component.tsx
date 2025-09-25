@@ -18,7 +18,7 @@ export default function Work() {
       <section
         id="was-wir-machen"
         aria-labelledby="was-wir-machen-title"
-        className="container mx-auto px-8 xl:px-0 py-28 flex flex-col gap-16"
+        className="container mx-auto px-8 xl:px-0 pt-48 pb-28 flex flex-col gap-16"
       >
         <h2
           id="was-wir-machen-title"
@@ -42,7 +42,7 @@ export default function Work() {
                 #CD #Konzeption #Webdesign #Programmierung
               </p>
               <div className="flex justify-end py-4">
-                <Button variant="secondary" asChild>
+                <Button variant="secondary" asChild showArrow>
                   <Link href="/projekte/htw-ki-werkstatt">Zum Projekt</Link>
                 </Button>
               </div>
@@ -63,7 +63,7 @@ export default function Work() {
                 #Weiterbildung #Theorie #Praxis
               </p>
               <div className="flex justify-end py-4">
-                <Button variant="secondary" asChild>
+                <Button variant="secondary" asChild showArrow>
                   <Link href="/workshops">Mehr erfahren</Link>
                 </Button>
               </div>
@@ -82,7 +82,7 @@ export default function Work() {
               <h3 className="text-xl xl:text-2xl font-bold">Co-Working</h3>
               <p className="text-brand-gray/70">#Kreativnetzwerk #NewWork</p>
               <div className="flex justify-end py-4">
-                <Button variant="secondary" asChild>
+                <Button variant="secondary" asChild showArrow>
                   <Link href="/co-working">Mehr erfahren</Link>
                 </Button>
               </div>

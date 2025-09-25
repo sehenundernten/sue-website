@@ -6,7 +6,7 @@ export default function About() {
     <section
       id="ueber-uns"
       aria-labelledby="ueber-uns-title"
-      className="container mx-auto px-8 xl:px-0 py-28 flex flex-col gap-16"
+      className="container mx-auto px-8 xl:px-0 pt-48 pb-28 flex flex-col gap-16"
     >
       <h2
         id="ueber-uns-title"
@@ -19,7 +19,7 @@ export default function About() {
           src="/about-icon.svg"
           alt=""
           aria-hidden="true"
-          className="hidden lg:block lg:w-[120px]"
+          className="hidden xl:block xl:w-[120px]"
           width={120}
           height={235}
         />
@@ -32,7 +32,7 @@ export default function About() {
             und kreative Projekte ermöglichen.
           </p>
           <p>
-            Unser Büro in der Nähe der Hochschule bietet einen Ort zum Arbeiten,
+            Unser Büro in der Nähe der HTW-Berlin bietet einen Ort zum Arbeiten,
             Netzwerken und Experimentieren. Wir organisieren Workshops,
             unterstützen Projekte und fördern den Austausch zwischen
             verschiedenen Disziplinen.

@@ -45,8 +45,8 @@ export default function Hero() {
             </p>
           </div>
           <div className="flex flex-row gap-4">
-            <Button variant="primary" size="primary" asChild>
-              <Link href="/#kontakt">Kontakt</Link>
+            <Button variant="primary" size="primary" asChild showArrow>
+              <Link href="/kontakt">Kontakt</Link>
             </Button>
           </div>
         </div>

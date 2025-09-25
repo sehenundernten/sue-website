@@ -15,7 +15,7 @@ export function BannerIcon({ src, alt, width, height }: BannerIconProps) {
       aria-hidden="true"
       width={width}
       height={height}
-      className="text-brand-yellow min-w-fit"
+      className="text-brand-yellow flex-shrink-0"
     />
   );
 }
