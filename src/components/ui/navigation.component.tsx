@@ -72,7 +72,7 @@ export default function Navigation() {
     { href: "/#was-wir-machen", label: "Was wir machen" },
     { href: "/#ueber-uns", label: "Über uns" },
     { href: "/#mitglied-werden", label: "Mitglied werden" },
-    { href: "/#kontakt", label: "Kontakt", isPrimary: true },
+    { href: "/kontakt", label: "Kontakt", isPrimary: true },
   ];
 
   return (
@@ -100,9 +100,9 @@ export default function Navigation() {
               <Image
                 src="/sue-logo.svg"
                 alt="Sehen und Ernten Logo"
-                width={120}
-                height={235}
-                className="h-8 w-auto lg:h-10"
+                width={186}
+                height={70}
+                className="h-10 w-auto lg:h-14"
                 priority
               />
               <span className="sr-only">sehen und ernten e.V.</span>
@@ -118,7 +118,7 @@ export default function Navigation() {
             {navigationItems.map((item, index) => (
               <li key={index}>
                 {item.isPrimary ? (
-                  <Button variant="primary" size="primary" asChild>
+                  <Button variant="primary" size="primary" asChild showArrow>
                     <Link href={item.href}>{item.label}</Link>
                   </Button>
                 ) : (
@@ -185,6 +185,7 @@ export default function Navigation() {
                     size="primary"
                     className="w-full justify-center"
                     asChild
+                    showArrow
                   >
                     <Link href={item.href} onClick={closeMenu}>
                       {item.label}

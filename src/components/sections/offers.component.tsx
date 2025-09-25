@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "../ui/button";
 
 export default function Offers() {
@@ -7,7 +6,7 @@ export default function Offers() {
     <section
       id="angebot"
       aria-labelledby="angebot-title"
-      className="container mx-auto px-8 xl:px-0 py-28 flex flex-col gap-16"
+      className="container mx-auto px-8 xl:px-0 pt-48 pb-28 flex flex-col gap-16"
     >
       <h2
         id="angebot-title"
@@ -30,7 +29,7 @@ export default function Offers() {
             </p>
           </div>
           <div className="flex flex-row justify-end">
-            <Button variant="secondary" asChild>
+            <Button variant="secondary" asChild showArrow>
               <Link href="/#mitglied-werden">Mitglied werden</Link>
             </Button>
           </div>
@@ -47,7 +46,7 @@ export default function Offers() {
             </p>
           </div>
           <div className="flex flex-row justify-end">
-            <Button variant="secondary" asChild>
+            <Button variant="secondary" asChild showArrow>
               <Link href="/#mitglied-werden">Mitglied werden</Link>
             </Button>
           </div>
@@ -64,8 +63,8 @@ export default function Offers() {
             </p>
           </div>
           <div className="flex flex-row justify-end">
-            <Button variant="secondary" asChild>
-              <Link href="/#kontakt">Kontakt aufnehmen</Link>
+            <Button variant="primary" size="primary" asChild showArrow>
+              <Link href="/kontakt">Kontakt aufnehmen</Link>
             </Button>
           </div>
         </li>

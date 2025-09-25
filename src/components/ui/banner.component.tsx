@@ -28,7 +28,7 @@ export function ScrollBanner({ items, containerRef }: ScrollBannerProps) {
   return (
     <motion.div style={{ x: bannerX }}>
       <div
-        className="flex flex-row w-full items-center gap-8 py-12"
+        className="flex flex-row w-full items-center py-12"
         role="region"
         aria-label="Unsere Vorteile auf einem Blick"
       >
@@ -36,13 +36,13 @@ export function ScrollBanner({ items, containerRef }: ScrollBannerProps) {
         {items.map((item, index) => (
           <div
             key={`first-${index}`}
-            className="flex flex-row items-center space-x-8"
+            className="flex flex-row items-center justify-between flex-shrink-0 mr-8"
             role="listitem"
           >
-            <span className="whitespace-pre text-md font-bold uppercase">
+            <span className="whitespace-nowrap text-md font-bold mr-8 uppercase">
               {item.text}
             </span>
-            {item.icon}
+            <div className="flex-shrink-0">{item.icon}</div>
           </div>
         ))}
         <div className="hidden xl:flex">
@@ -50,10 +50,10 @@ export function ScrollBanner({ items, containerRef }: ScrollBannerProps) {
           {items.map((item, index) => (
             <div
               key={`second-${index}`}
-              className="flex flex-row items-center space-x-8"
+              className="flex flex-row items-center justify-between flex-shrink-0 mr-8"
               role="listitem"
             >
-              <span className="whitespace-pre text-md font-bold uppercase">
+              <span className="whitespace-nowrap text-md font-bold mr-8 uppercase">
                 {item.text}
               </span>
               {item.icon}

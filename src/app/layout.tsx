@@ -43,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de">
+    <html lang="de" className="scroll-smooth">
       <body
         className={`${figtree.variable} antialiased bg-brand-beige text-brand-gray`}
       >

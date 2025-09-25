@@ -53,7 +53,7 @@ export default function HTWKIWerkstatt() {
           />
         </div>
       </section>
-      <section className="container mx-auto px-8 xl:px-0 py-16 xl:py-28">
+      <section className="container mx-auto px-8 xl:px-0 py-16 xl:pb-28 xl:pt-48">
         <div className="flex flex-col max-w-3xl gap-4 text-lg">
           <p>
             Die Herausforderung lag darin nicht in das KI-Design-Klischee zu
@@ -105,7 +105,7 @@ export default function HTWKIWerkstatt() {
       </section>
       <section className="container mx-auto px-8 xl:px-0 py-28">
         <div className="flex flex-col gap-4">
-          <Button variant="secondary" asChild>
+          <Button variant="secondary" asChild showArrow>
             <Link
               href="https://kiwerkstatt.f2.htw-berlin.de/"
               target="_blank"

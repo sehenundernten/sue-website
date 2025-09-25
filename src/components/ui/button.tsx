@@ -23,6 +23,7 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary text-md font-bold underline-offset-4 decoration-brand-orange decoration-3 hover:underline",
+        paypal: "bg-brand-blue text-white text-md font-bold shadow-none group",
       },
       size: {
         default: "h-12 px-4 py-2 has-[>svg]:px-3",
@@ -45,10 +46,12 @@ function Button({
   size,
   asChild = false,
   children,
+  showArrow = false,
   ...props
 }: React.ComponentProps<"button"> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean;
+    showArrow?: boolean;
   }) {
   const Comp = asChild ? Slot : "button";
 
@@ -63,14 +66,16 @@ function Button({
           <span className="transition-transform duration-300 group-hover:translate-x-1">
             {children}
           </span>
-          <Image
-            src="/arrow-icon.svg"
-            alt=""
-            aria-hidden="true"
-            width={60}
-            height={32}
-            className="transition-transform duration-300 group-hover:translate-x-1"
-          />
+          {showArrow && (
+            <Image
+              src="/arrow-icon.svg"
+              alt=""
+              aria-hidden="true"
+              width={60}
+              height={32}
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            />
+          )}
         </div>
       ) : (
         children

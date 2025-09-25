@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function MemberSliderItem({ member }: { member: Member }) {
   return (
     <CarouselItem
-      className="basis-1/1 lg:basis-1/3 p-0 flex flex-col gap-6 items-center justify-between"
+      className="basis-1/1 lg:basis-1/3 px-0 py-1 flex flex-col gap-6 items-center justify-between"
       key={member.name}
     >
       <Image

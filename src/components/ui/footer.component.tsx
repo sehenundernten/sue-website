@@ -5,20 +5,20 @@ import { Button } from "./button";
 export default function Footer() {
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute left-0 right-0 bottom-0 w-full h-full -z-10">
+      <div className="absolute inset-0 -z-10">
         <Image
           src="/footer-bg.png"
           alt=""
-          className="w-full object-cover lg:object-fill h-full"
+          className="w-full h-full object-cover object-top"
           aria-hidden="true"
           width={2000}
           height={2000}
         />
       </div>
       <footer
-        id="kontakt"
+        id="footer"
         role="contentinfo"
-        className="container mx-auto px-4 xl:px-0 pt-80 pb-28"
+        className="container mx-auto px-4 xl:px-0 pt-48 md:pt-80 xl:pt-128 pb-48 relative z-10"
       >
         <div className="flex flex-col justify-center items-center text-center gap-8 text-white">
           <div className="flex flex-col items-center">
@@ -39,42 +39,60 @@ export default function Footer() {
               Werkstatt für Konzeption und Gestaltung
             </p>
           </div>
-          <div>
-            <p className="text-lg">Mathildenstraße 10</p>
-            <p>12459 Berlin</p>
-            <p>E-Mail: mail@sehenundernten.org</p>
-          </div>
           <div className="flex flex-row gap-16">
-            <Link href="https://www.instagram.com/sehenundernten/">
+            <Link
+              href="https://www.instagram.com/sehenundernten/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group p-4 rounded-full backdrop-blur-xs bg-transparent hover:bg-brand-blue/60 transition-colors"
+              aria-label="Instagram Profil öffnen"
+            >
               <Image
                 src="/instagram-logo.svg"
                 alt="Instagram Logo"
                 width={32}
                 height={32}
+                className="group-hover:scale-110 transition-transform"
               />
               <span className="sr-only">Instagram Profil</span>
             </Link>
-            <Link href="https://www.linkedin.com/company/sehen-und-ernten/">
+            <Link
+              href="https://www.linkedin.com/company/sehen-und-ernten/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group p-4 rounded-full backdrop-blur-xs bg-transparent hover:bg-brand-blue/60 transition-colors"
+              aria-label="LinkedIn Profil öffnen"
+            >
               <Image
                 src="/linkedin-logo.svg"
                 alt="LinkedIn Logo"
                 width={32}
                 height={32}
+                className="group-hover:scale-110 transition-transform"
               />
               <span className="sr-only">LinkedIn Profil</span>
             </Link>
           </div>
           <div className="flex flex-col lg:flex-row justify-center items-center gap-1 text-center">
-            <p>&copy; 2025 Sehen und Ernten. Alle Rechte vorbehalten.</p>
+            <p className="text-sm font-light">
+              &copy; {new Date().getFullYear()} sehen und ernten e.V. Alle
+              Rechte vorbehalten.
+            </p>
             <div className="flex flex-row items-center">
               <Button variant="link" asChild>
-                <Link className="font-bold text-white" href="/impressum">
+                <Link
+                  className="text-white text-sm font-light"
+                  href="/impressum"
+                >
                   Impressum
                 </Link>
               </Button>
-              <span className="text-lg">|</span>
+              <span className="text-sm">|</span>
               <Button variant="link" asChild>
-                <Link className="font-bold text-white" href="/datenschutz">
+                <Link
+                  className="text-white text-sm font-light"
+                  href="/datenschutz"
+                >
                   Datenschutz
                 </Link>
               </Button>
